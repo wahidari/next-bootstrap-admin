@@ -373,7 +373,7 @@ export default function Table() {
               onHide={handleClose}
               data={dataToDelete}>
             </DeleteModal> */}
-            <Modal show={showModal} onHide={() => handleClose()}>
+            <Modal show={showModal} onHide={() => handleClose()} centered>
               <Modal.Header closeButton>
                 <Modal.Title>
                   Delete Data
