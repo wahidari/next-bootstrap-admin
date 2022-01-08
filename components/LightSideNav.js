@@ -2,11 +2,11 @@ import Link from "next/link"
 import { FaTachometerAlt, FaAngleDown, FaColumns, FaBookOpen, FaChartArea, FaTable } from "react-icons/fa"
 import ActiveLink from "./ActiveLink"
 
-export default function SideNav() {
+export default function LightSideNav() {
   return (
     <>
       <div id="layoutSidenav_nav">
-        <nav className="sb-sidenav sb-sidenav-dark">
+        <nav className="sb-sidenav sb-sidenav-light">
           <div className="sb-sidenav-menu">
             <div className="nav">
               <div className="sb-sidenav-menu-heading">Core</div>
@@ -24,11 +24,7 @@ export default function SideNav() {
               </a>
               <div className="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav className="sb-sidenav-menu-nested nav">
-                  <ActiveLink activeClassName="active" href="/light-sidenav">
-                    <a className="nav-link">
-                      Light SideNav
-                    </a>
-                  </ActiveLink>
+                  <a className="nav-link" href="#">Light Sidenav</a>
                 </nav>
               </div>
               <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
@@ -44,16 +40,8 @@ export default function SideNav() {
                   </a>
                   <div className="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                     <nav className="sb-sidenav-menu-nested nav">
-                      <ActiveLink activeClassName="active" href="/login">
-                        <a className="nav-link">
-                          Login
-                        </a>
-                      </ActiveLink>
-                      <ActiveLink activeClassName="active" href="/register">
-                        <a className="nav-link">
-                          Register
-                        </a>
-                      </ActiveLink>
+                      <a className="nav-link" href="#">Login</a>
+                      <a className="nav-link" href="#">Register</a>
                       <a className="nav-link" href="#">Forgot Password</a>
                     </nav>
                   </div>

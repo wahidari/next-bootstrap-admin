@@ -1,33 +1,10 @@
 import Head from 'next/head'
 import TopNav from "../components/TopNav"
-import SideNav from "../components/SideNav";
+import LightSideNav from "../components/LightSideNav";
 import Footer from '../components/Footer';
 import Link from 'next/link';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, Title, PointElement, LineElement} from 'chart.js';
-import { Line, Bar, Pie, Doughnut } from 'react-chartjs-2';
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, ArcElement, Tooltip, Legend, PointElement, LineElement);
-
-const data = {
-  labels: ['Red', 'Blue', 'Yellow', 'Teal', 'Purple', 'Green'],
-  datasets: [
-    {
-      label: '# of Votes',
-      data: [12, 9, 3, 5, 2, 3],
-      backgroundColor: [
-        '#dc3545',
-        '#0d6efd',
-        '#ffc107',
-        '#0dcaf0',
-        '#6610f2',
-        '#198754'
-      ],
-      borderColor: '#ced4da',
-    },
-  ],
-};
-
-export default function Chart() {
+export default function Light() {
 
   return (
     <>
@@ -60,7 +37,7 @@ export default function Chart() {
 
         <div id="layoutSidenav">
           
-          <SideNav />
+          <LightSideNav />
 
           <div id="layoutSidenav_content">
             <main>
@@ -86,9 +63,7 @@ export default function Chart() {
                     <i className="fas fa-chart-area me-1"></i>
                     Area Chart Example
                   </div>
-                  <div className="card-body">
-                    <Line data={data} />
-                  </div>
+                  <div className="card-body"><canvas id="myAreaChart" width="100%" height="30"></canvas></div>
                   <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                 </div>
                 <div className="row">
@@ -98,11 +73,7 @@ export default function Chart() {
                         <i className="fas fa-chart-bar me-1"></i>
                         Bar Chart Example
                       </div>
-                      <div className="card-body">
-                        <div className="col-12 col-sm-8 col-md-6 col-lg-10 col-xl-12 mx-auto">
-                          <Bar data={data} />
-                        </div>
-                      </div>
+                      <div className="card-body"><canvas id="myBarChart" width="100%" height="50"></canvas></div>
                       <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                     </div>
                   </div>
@@ -112,11 +83,7 @@ export default function Chart() {
                         <i className="fas fa-chart-pie me-1"></i>
                         Pie Chart Example
                       </div>
-                      <div className="card-body">
-                        <div className="col-12 col-sm-8 col-md-6 col-lg-10 col-xl-8 mx-auto">
-                          <Pie data={data} />  
-                        </div>
-                      </div>
+                      <div className="card-body"><canvas id="myPieChart" width="100%" height="50"></canvas></div>
                       <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                     </div>
                   </div>
