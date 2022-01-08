@@ -1,7 +1,9 @@
+import Link from "next/link";
 import { useEffect } from "react";
 import { FaBars, FaUserAlt, FaSearch } from "react-icons/fa"
 
 export default function TopNav() {
+  
   useEffect(() => {
     // Toggle the side navigation
     const sidebarToggle = document.body.querySelector('#sidebarToggle');
@@ -13,11 +15,14 @@ export default function TopNav() {
       });
     }
   }, []);
+
   return (
     <>
       <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         {/* <!-- Navbar Brand--> */}
-        <a className="navbar-brand ps-3" href="index.html">Next Bootstrap Admin</a>
+        <Link href="/">
+          <a className="navbar-brand ps-3">Next Bootstrap Admin</a>
+        </Link>
         {/* <!-- Sidebar Toggle--> */}
         <button className="btn btn-sm order-1 order-lg-0 me-4 me-lg-0 pt-0" id="sidebarToggle" href="#!">
           <i><FaBars /></i>

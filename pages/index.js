@@ -125,7 +125,7 @@ export default function Home() {
                   </div>
                   <div className="card-body">
                     <div className="table-responsive">
-                    <table id="datatable" className="table table-striped">
+                    <table id="datatable" className="table">
                       <thead>
                         <tr>
                           <th>Name</th>
