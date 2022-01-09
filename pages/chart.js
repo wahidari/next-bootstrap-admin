@@ -13,7 +13,7 @@ const data = {
   datasets: [
     {
       label: '# of Votes',
-      data: [12, 9, 3, 5, 2, 3],
+      data: [10, 9, 6, 5, 7, 8],
       backgroundColor: [
         '#dc3545',
         '#0d6efd',
@@ -22,7 +22,10 @@ const data = {
         '#6610f2',
         '#198754'
       ],
-      borderColor: '#ced4da',
+      pointRadius: 5,
+      pointHoverRadius: 8,
+      lineTension: 0.5,
+      pointHitRadius: 50,
     },
   ],
 };
@@ -77,7 +80,8 @@ export default function Chart() {
                 <div className="card mb-4">
                   <div className="card-body">
                     Chart.js is a third party plugin that is used to generate the charts in this template. The charts below have been customized - for further customization options, please visit the official
-                    <a target="_blank" rel="noreferrer" href="https://www.chartjs.org/docs/latest/" className="text-decoration-none"> Chart.js documentation</a>
+                    <a target="_blank" rel="noreferrer" href="https://www.chartjs.org/docs/latest/" className="text-decoration-none"> Chart.js documentation</a> &
+                    <a target="_blank" rel="noreferrer" href="https://react-chartjs-2.netlify.app/" className="text-decoration-none"> React Chart.js documentation</a>
                     .
                   </div>
                 </div>
@@ -92,15 +96,16 @@ export default function Chart() {
                   <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                 </div>
                 <div className="row">
+                  
                   <div className="col-lg-6">
                     <div className="card mb-4">
                       <div className="card-header">
-                        <i className="fas fa-chart-bar me-1"></i>
-                        Bar Chart Example
+                        <i className="fas fa-chart-pie me-1"></i>
+                        Pie Chart Example
                       </div>
                       <div className="card-body">
-                        <div className="col-12 col-sm-8 col-md-6 col-lg-10 col-xl-12 mx-auto">
-                          <Bar data={data} />
+                        <div className="col-12 col-sm-8 col-md-6 col-lg-10 col-xl-8 mx-auto">
+                          <Pie data={data} />  
                         </div>
                       </div>
                       <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
@@ -114,7 +119,21 @@ export default function Chart() {
                       </div>
                       <div className="card-body">
                         <div className="col-12 col-sm-8 col-md-6 col-lg-10 col-xl-8 mx-auto">
-                          <Pie data={data} />  
+                          <Doughnut data={data} />  
+                        </div>
+                      </div>
+                      <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="card mb-4">
+                      <div className="card-header">
+                        <i className="fas fa-chart-bar me-1"></i>
+                        Bar Chart Example
+                      </div>
+                      <div className="card-body">
+                        <div className="col-12 col-sm-8 col-md-6 col-lg-10 col-xl-12 mx-auto">
+                          <Bar data={data} />
                         </div>
                       </div>
                       <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
