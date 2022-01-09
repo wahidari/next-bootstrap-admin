@@ -9,6 +9,31 @@ import 'jquery/dist/jquery.min.js'
 //Datatable Modules
 import "datatables.net-bs5/js/dataTables.bootstrap5.min.js"
 import "datatables.net-bs5/css/dataTables.bootstrap5.min.css"
+// ChartJS
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, Title, PointElement, LineElement } from 'chart.js';
+import { Line, Bar, Pie, Doughnut } from 'react-chartjs-2';
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, ArcElement, Tooltip, Legend, PointElement, LineElement);
+const data = {
+  labels: ['Red', 'Blue', 'Yellow', 'Teal', 'Purple', 'Green'],
+  datasets: [
+    {
+      label: '# of Votes',
+      data: [10, 9, 6, 5, 7, 8],
+      backgroundColor: [
+        '#dc3545',
+        '#0d6efd',
+        '#ffc107',
+        '#0dcaf0',
+        '#6610f2',
+        '#198754'
+      ],
+      pointRadius: 5,
+      pointHoverRadius: 8,
+      lineTension: 0.5,
+      pointHitRadius: 50,
+    },
+  ],
+};
 
 export default function Home() {
   useEffect(() => {
@@ -102,18 +127,26 @@ export default function Home() {
                     <div className="card mb-4">
                       <div className="card-header">
                         <i className="fas fa-chart-area me-1"></i>
-                        Area Chart Example
+                        Doughnut Chart Example
                       </div>
-                      <div className="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
+                      <div className="card-body">
+                        <div className="col-12 col-sm-8 col-md-6 col-lg-10 col-xl-8 mx-auto">
+                          <Doughnut data={data} />
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div className="col-xl-6">
                     <div className="card mb-4">
                       <div className="card-header">
                         <i className="fas fa-chart-bar me-1"></i>
-                        Bar Chart Example
+                        Pie Chart Example
                       </div>
-                      <div className="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
+                      <div className="card-body">
+                        <div className="col-12 col-sm-8 col-md-6 col-lg-10 col-xl-8 mx-auto">
+                          <Pie data={data} />
+                        </div>  
+                      </div>
                     </div>
                   </div>
                 </div>
