@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { FaBars, FaUserAlt, FaSearch } from "react-icons/fa"
 
-export default function TopNav() {
+export default function LightTopNav() {
   
   useEffect(() => {
     // Toggle the side navigation
