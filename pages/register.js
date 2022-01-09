@@ -30,7 +30,7 @@ export default function Register() {
         <meta property="og:image" content="https://next-bootstrapp.vercel.app/metalogo.png"></meta>
       </Head>
 
-      <body className="sb-nav-fixed">
+      <main className="sb-nav-fixed">
 
         <TopNav />
 
@@ -105,7 +105,7 @@ export default function Register() {
           </div>
         </div>
 
-      </body>
+      </main>
     </>
   )
 }

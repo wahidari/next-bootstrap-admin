@@ -290,7 +290,7 @@ export default function Table() {
         
       </Head>
 
-      <body className="sb-nav-fixed">
+      <main className="sb-nav-fixed">
         
         <TopNav />
 
@@ -393,7 +393,7 @@ export default function Table() {
           </div>
         </div>
         
-      </body>
+      </main>
     </>
   )
 }

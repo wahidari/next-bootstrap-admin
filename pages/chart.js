@@ -57,7 +57,7 @@ export default function Chart() {
         <meta property="og:image" content="https://next-bootstrapp.vercel.app/metalogo.png"></meta>
       </Head>
 
-      <body className="sb-nav-fixed">
+      <main className="sb-nav-fixed">
         
         <TopNav />
 
@@ -148,7 +148,7 @@ export default function Chart() {
           </div>
         </div>
         
-      </body>
+      </main>
     </>
   )
 }
