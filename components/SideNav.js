@@ -26,7 +26,7 @@ export default function SideNav() {
                 <nav className="sb-sidenav-menu-nested nav">
                   <ActiveLink activeClassName="active" href="/light-sidenav">
                     <a className="nav-link">
-                      Light SideNav
+                      Light Theme
                     </a>
                   </ActiveLink>
                 </nav>

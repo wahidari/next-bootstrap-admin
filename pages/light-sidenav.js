@@ -1,8 +1,34 @@
 import Head from 'next/head'
-import TopNav from "../components/TopNav"
+import LightTopNav from "../components/LightTopNav"
 import LightSideNav from "../components/LightSideNav";
 import Footer from '../components/Footer';
 import Link from 'next/link';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, Title, PointElement, LineElement } from 'chart.js';
+import { Pie, Doughnut } from 'react-chartjs-2';
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, ArcElement, Tooltip, Legend, PointElement, LineElement);
+
+const data = {
+  labels: ['Red', 'Blue', 'Yellow', 'Teal', 'Purple', 'Green'],
+  datasets: [
+    {
+      label: '# of Votes',
+      data: [10, 9, 6, 5, 7, 8],
+      backgroundColor: [
+        '#ff5b5c',
+        '#5a8dee',
+        '#fdac41',
+        '#0dcaf0',
+        '#7064f5',
+        '#39da8a'
+      ],
+      pointRadius: 5,
+      pointHoverRadius: 8,
+      lineTension: 0.5,
+      pointHitRadius: 50,
+    },
+  ],
+};
 
 export default function Light() {
 
@@ -32,11 +58,11 @@ export default function Light() {
       </Head>
 
       <body className="sb-nav-fixed">
-        
-        <TopNav />
+
+        <LightTopNav />
 
         <div id="layoutSidenav">
-          
+
           <LightSideNav />
 
           <div id="layoutSidenav_content">
@@ -47,33 +73,30 @@ export default function Light() {
                   <li className="breadcrumb-item">
                     <Link href="/">
                       <a className="text-decoration-none">Dashboard</a>
-                    </Link>  
+                    </Link>
                   </li>
                   <li className="breadcrumb-item active">Charts</li>
                 </ol>
                 <div className="card mb-4">
                   <div className="card-body">
                     Chart.js is a third party plugin that is used to generate the charts in this template. The charts below have been customized - for further customization options, please visit the official
-                    <a target="_blank" rel="noreferrer" href="https://www.chartjs.org/docs/latest/" className="text-decoration-none"> Chart.js documentation</a>
+                    <a target="_blank" rel="noreferrer" href="https://www.chartjs.org/docs/latest/" className="text-decoration-none"> Chart.js documentation</a> &
+                    <a target="_blank" rel="noreferrer" href="https://react-chartjs-2.netlify.app/" className="text-decoration-none"> React Chart.js documentation</a>
                     .
                   </div>
-                </div>
-                <div className="card mb-4">
-                  <div className="card-header">
-                    <i className="fas fa-chart-area me-1"></i>
-                    Area Chart Example
-                  </div>
-                  <div className="card-body"><canvas id="myAreaChart" width="100%" height="30"></canvas></div>
-                  <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                 </div>
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="card mb-4">
                       <div className="card-header">
-                        <i className="fas fa-chart-bar me-1"></i>
-                        Bar Chart Example
+                        <i className="fas fa-chart-pie me-1"></i>
+                        Pie Chart Example
                       </div>
-                      <div className="card-body"><canvas id="myBarChart" width="100%" height="50"></canvas></div>
+                      <div className="card-body">
+                        <div className="col-12 col-sm-8 col-md-6 col-lg-10 col-xl-8 mx-auto">
+                          <Pie data={data} />
+                        </div>
+                      </div>
                       <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                     </div>
                   </div>
@@ -83,19 +106,23 @@ export default function Light() {
                         <i className="fas fa-chart-pie me-1"></i>
                         Pie Chart Example
                       </div>
-                      <div className="card-body"><canvas id="myPieChart" width="100%" height="50"></canvas></div>
+                      <div className="card-body">
+                        <div className="col-12 col-sm-8 col-md-6 col-lg-10 col-xl-8 mx-auto">
+                          <Doughnut data={data} />
+                        </div>
+                      </div>
                       <div className="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
                     </div>
                   </div>
                 </div>
               </div>
             </main>
-            
+
             <Footer />
 
           </div>
         </div>
-        
+
       </body>
     </>
   )

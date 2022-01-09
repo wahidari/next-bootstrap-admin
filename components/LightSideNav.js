@@ -24,7 +24,7 @@ export default function LightSideNav() {
               </a>
               <div className="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                 <nav className="sb-sidenav-menu-nested nav">
-                  <a className="nav-link" href="#">Light Sidenav</a>
+                  <a className="nav-link" href="#">Light Theme</a>
                 </nav>
               </div>
               <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">

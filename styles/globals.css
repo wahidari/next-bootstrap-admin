@@ -111,20 +111,9 @@ body {
 	overflow-y: auto;
 }
 
-/* .sb-sidenav-menu::-webkit-scrollbar {
-  display: none;
-} */
-
 /* Let's get this party started */
 .sb-sidenav-menu::-webkit-scrollbar {
 	width: 8px;
-}
-
-/* Handle */
-.sb-sidenav-menu::-webkit-scrollbar-thumb {
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
-	background: #343a40;
 }
 
 .sb-nav-fixed #layoutSidenav #layoutSidenav_content {
@@ -271,6 +260,12 @@ body {
 	background-color: #343a40;
 }
 
+.sb-sidenav-dark .sb-sidenav-menu::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #343a40;
+}
+
 .sb-sidenav-light {
 	background-color: #f8f9fa;
 	color: #212529;
@@ -281,7 +276,7 @@ body {
 }
 
 .sb-sidenav-light .sb-sidenav-menu .nav-link {
-	color: #212529;
+	color: #6c757d;
 }
 
 .sb-sidenav-light .sb-sidenav-menu .nav-link .sb-nav-link-icon {
@@ -306,6 +301,12 @@ body {
 
 .sb-sidenav-light .sb-sidenav-footer {
 	background-color: #e9ecef;
+}
+
+.sb-sidenav-light .sb-sidenav-menu::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	background: #e9ecef;
 }
 
 /* DATATABLE STYLING  */
