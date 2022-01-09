@@ -11,7 +11,7 @@ import "datatables.net-bs5/js/dataTables.bootstrap5.min.js"
 import "datatables.net-bs5/css/dataTables.bootstrap5.min.css"
 // ChartJS
 import { Chart as ChartJS, ArcElement, Tooltip, Legend, CategoryScale, LinearScale, BarElement, Title, PointElement, LineElement } from 'chart.js';
-import { Line, Bar, Pie, Doughnut } from 'react-chartjs-2';
+import { Pie, Doughnut } from 'react-chartjs-2';
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, ArcElement, Tooltip, Legend, PointElement, LineElement);
 const data = {
   labels: ['Red', 'Blue', 'Yellow', 'Teal', 'Purple', 'Green'],
@@ -20,12 +20,12 @@ const data = {
       label: '# of Votes',
       data: [10, 9, 6, 5, 7, 8],
       backgroundColor: [
-        '#dc3545',
-        '#0d6efd',
-        '#ffc107',
+        '#ff5b5c',
+        '#5a8dee',
+        '#fdac41',
         '#0dcaf0',
-        '#6610f2',
-        '#198754'
+        '#7064f5',
+        '#39da8a'
       ],
       pointRadius: 5,
       pointHoverRadius: 8,
