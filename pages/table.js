@@ -312,8 +312,8 @@ export default function Table() {
                 </ol>
                 <div className="card mb-4">
                   <div className="card-body">
-                    DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the
-                    <a target="_blank" href="https://datatables.net/" rel="noreferrer" className="text-decoration-none"> official DataTables documentation</a>
+                    DataTables is a plugin that is used to generate the demo table below. For more information about DataTables, visit the
+                    <a target="_blank" href="https://datatables.net/" rel="noreferrer" className="text-decoration-none"> DataTables documentation</a>
                     .
                   </div>
                 </div>
