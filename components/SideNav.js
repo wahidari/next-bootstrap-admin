@@ -54,7 +54,11 @@ export default function SideNav() {
                           Register
                         </a>
                       </ActiveLink>
-                      <a className="nav-link" href="#">Forgot Password</a>
+                      <ActiveLink activeClassName="active" href="/forgot">
+                        <a className="nav-link">
+                          Forgot Password
+                        </a>
+                      </ActiveLink>
                     </nav>
                   </div>
                   <a className="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
@@ -63,9 +67,16 @@ export default function SideNav() {
                   </a>
                   <div className="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                     <nav className="sb-sidenav-menu-nested nav">
-                      <a className="nav-link" href="#">401 Page</a>
-                      <a className="nav-link" href="#">404 Page</a>
-                      <a className="nav-link" href="#">500 Page</a>
+                      <ActiveLink activeClassName="active" href="/404">
+                        <a className="nav-link">
+                          404 Page
+                        </a>
+                      </ActiveLink>
+                      <ActiveLink activeClassName="active" href="/500">
+                        <a className="nav-link">
+                          500 Page
+                        </a>
+                      </ActiveLink>
                     </nav>
                   </div>
                 </nav>
