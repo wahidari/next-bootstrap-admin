@@ -74,7 +74,7 @@ export default function LightSideNav() {
           </div>
           <div className="sb-sidenav-footer">
             <div className="small">Logged in as:</div>
-            Start Bootstrap
+            Admin
           </div>
         </nav>
       </div>

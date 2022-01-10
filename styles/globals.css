@@ -309,6 +309,31 @@ body {
 	background: #e9ecef;
 }
 
+.bg-blue {
+	background-color: #5a8dee !important;
+}
+
+.bg-red {
+	background-color: #ff5b5c !important;
+}
+
+.bg-yellow {
+	background-color: #fdac41 !important;
+}
+
+.bg-green {
+	background-color: #39da8a !important;
+}
+
+.bg-teal {
+	background-color: #0dcaf0 !important;
+}
+
+.bg-purple {
+	background-color: #7064f5 !important;
+}
+
+
 /* DATATABLE STYLING  */
 /* DATATABLE STYLING  */
 /* DATATABLE STYLING  */

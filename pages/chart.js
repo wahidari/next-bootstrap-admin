@@ -15,12 +15,12 @@ const data = {
       label: '# of Votes',
       data: [10, 9, 6, 5, 7, 8],
       backgroundColor: [
-        '#dc3545',
-        '#0d6efd',
-        '#ffc107',
+        '#ff5b5c',
+        '#5a8dee',
+        '#fdac41',
         '#0dcaf0',
-        '#6610f2',
-        '#198754'
+        '#7064f5',
+        '#39da8a'
       ],
       pointRadius: 5,
       pointHoverRadius: 8,

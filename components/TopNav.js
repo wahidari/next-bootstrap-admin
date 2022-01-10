@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { FaBars, FaUserAlt, FaSearch } from "react-icons/fa"
 
 export default function TopNav() {
-  
+
   useEffect(() => {
     // Toggle the side navigation
     const sidebarToggle = document.body.querySelector('#sidebarToggle');
@@ -24,7 +24,7 @@ export default function TopNav() {
           <a className="navbar-brand ps-3">Next Bootstrap Admin</a>
         </Link>
         {/* <!-- Sidebar Toggle--> */}
-        <button className="btn btn-sm order-1 order-lg-0 me-4 me-lg-0 pt-0" id="sidebarToggle" href="#!">
+        <button className="btn btn-sm order-1 order-md-0 me-3 me-lg-0 pt-0" id="sidebarToggle" href="#!">
           <i><FaBars /></i>
         </button>
         {/* <!-- Navbar Search--> */}
@@ -35,9 +35,11 @@ export default function TopNav() {
           </div>
         </form>
         {/* <!-- Navbar--> */}
-        <ul className="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <ul className="navbar-nav ms-auto ms-md-0 me-md-3">
           <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle pt-1" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><FaUserAlt className="me-1" /></a>
+            <a className="nav-link dropdown-toggle pt-1" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <FaUserAlt className="me-1" />
+            </a>
             <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li><a className="dropdown-item" href="#!">Settings</a></li>
               <li><a className="dropdown-item" href="#!">Activity Log</a></li>
