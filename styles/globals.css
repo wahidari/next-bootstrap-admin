@@ -3,21 +3,6 @@ body {
 	height: 100%;
 }
 
-#layoutAuthentication {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-#layoutAuthentication #layoutAuthentication_content {
-	min-width: 0;
-	flex-grow: 1;
-}
-
-#layoutAuthentication #layoutAuthentication_footer {
-	min-width: 0;
-}
-
 #layoutSidenav {
 	display: flex;
 }
@@ -111,7 +96,6 @@ body {
 	overflow-y: auto;
 }
 
-/* Let's get this party started */
 .sb-sidenav-menu::-webkit-scrollbar {
 	width: 8px;
 }
@@ -119,25 +103,6 @@ body {
 .sb-nav-fixed #layoutSidenav #layoutSidenav_content {
 	padding-left: 225px;
 	top: 56px;
-}
-
-#layoutError {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-#layoutError #layoutError_content {
-	min-width: 0;
-	flex-grow: 1;
-}
-
-#layoutError #layoutError_footer {
-	min-width: 0;
-}
-
-.img-error {
-	max-width: 20rem;
 }
 
 .nav .nav-link .sb-nav-link-icon,
@@ -157,7 +122,7 @@ body {
 }
 
 .sb-topnav.navbar-dark #sidebarToggle {
-	color: rgba(255, 255, 255, 0.5);
+	color: #fff;
 }
 
 .sb-topnav.navbar-light #sidebarToggle {
@@ -309,6 +274,15 @@ body {
 	background: #e9ecef;
 }
 
+.mobile-nav {
+	width: 250px !important;
+	background-color: #212529 !important;
+}
+
+/* DASHBOARD STYLING  */
+/* DASHBOARD STYLING  */
+/* DASHBOARD STYLING  */
+
 .bg-blue {
 	background-color: #5a8dee !important;
 }
@@ -338,16 +312,17 @@ body {
 /* DATATABLE STYLING  */
 /* DATATABLE STYLING  */
 
-.dataTables_length, .dataTables_filter {
+.dataTables_length,
+.dataTables_filter {
 	margin-bottom: 12px;
 }
 
 .dataTables_info {
-  margin-top: 6px !important;
+	margin-top: 6px !important;
 }
 
 .dataTables_paginate {
-  margin-top: 12px !important;
+	margin-top: 12px !important;
 }
 
 @media (max-width: 768px) {
