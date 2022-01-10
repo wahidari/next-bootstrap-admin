@@ -1,9 +1,31 @@
+import { useState, useEffect } from 'react';
+import axios from "axios";
 import Head from 'next/head'
 import TopNav from "../components/TopNav"
 import SideNav from "../components/SideNav"
 import Footer from '../components/Footer'
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 export default function Component() {
+  const [example, setExample] = useState();
+
+  async function getDataa() {
+    try {
+      const res = await axios.get('https://virtserver.swaggerhub.com/masdimya/masdimyaproject1/1.0.0/profil/visi-misi');
+      setExample(res.data);
+    } catch (error) {
+      console.log("Error Fetching Data");
+      console.error(error);
+    }
+  }
+
+  useEffect(() => {
+    if(!example) {
+      getDataa();
+    }
+  }, [example]);
+
 
   return (
     <>
@@ -47,6 +69,22 @@ export default function Component() {
                 </ol>
 
                 <div>
+                  <h2 className="my-3">Skeleton</h2>
+                  <Skeleton className="w-50 mb-2" height={40}/> 
+                  <Skeleton className="w-75" count={3} />
+
+                  <h4 className="my-3">Skeleton With Get Data</h4>
+                  {example ? ( 
+                      <div>
+                        {example.visi}
+                      </div>
+                    ) : (
+                      <div>
+                        <Skeleton className="w-75" count={2} />
+                      </div>
+                    )
+                  }
+
                   <h2 className="my-3">Tabs</h2>
                   <div className="mb-4">
                     <nav>
