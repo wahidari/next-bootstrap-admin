@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { FaBars, FaUserAlt, FaSearch } from "react-icons/fa"
+import { FaBars, FaUser, FaSearch } from "react-icons/fa"
 import MobileNav from "./MobileNav";
 
 export default function TopNav() {
@@ -51,7 +51,7 @@ export default function TopNav() {
         <ul className="navbar-nav ms-auto ms-md-0 me-lg-3">
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle pt-1" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <FaUserAlt className="me-1" />
+              <FaUser className="text-white" />
             </a>
             <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <li><a className="dropdown-item" href="#!">Settings</a></li>
