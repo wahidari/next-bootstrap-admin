@@ -89,13 +89,13 @@ export default function Form() {
                       <div className="card-header"><h3 className="text-center font-weight-light my-2">Login</h3></div>
                       <div className="card-body">
                         {showAlertSuccess ? 
-                          // if show alert success TRUE
+                          // if show alert success TRUE, show alert
                           <Alert variant="success"> <p className="mb-0"> {successMessage} </p> </Alert>
                           // if show alert success FALSE
                           : "" 
                         }
                         {showAlertError ? 
-                          // if show alert error TRUE
+                          // if show alert error TRUE, show alert
                           <Alert variant="danger"> <p className="mb-0"> {errorMessage} </p> </Alert>
                           // if show alert error FALSE
                           : "" 
