@@ -4,11 +4,12 @@ import { FaBars, FaUser, FaSearch } from "react-icons/fa"
 import MobileNav from "./MobileNav";
 
 export default function TopNav() {
+  // Mobile Nav
   const [showMobileNav, setShowMobileNav] = useState(false);
-
   const handleCloseMobileNav = () => setShowMobileNav(false);
   const handleShowMobileNav = () => setShowMobileNav(true);
 
+  // Desktop Nav
   useEffect(() => {
     // Toggle the side navigation
     const sidebarToggle = document.body.querySelector('#sidebarToggle');
@@ -27,12 +28,12 @@ export default function TopNav() {
         <Link href="/">
           <a className="navbar-brand ps-3">Next Bootstrap Admin</a>
         </Link>
-        {/* <!-- Sidebar Toggle on Large Screen--> */}
+        {/* <!-- Sidebar Toggle show on Large Screen--> */}
         {/* <!-- Hide on Medium Screen--> */}
         <button className="d-none d-lg-block btn btn-sm order-1 order-md-0 me-3 me-lg-0 pt-0" id="sidebarToggle" href="#!">
           <i><FaBars /></i>
         </button>
-        {/* <!-- Sidebar Toggle on Small Screen--> */}
+        {/* <!-- Sidebar Toggle show on Small Screen--> */}
         {/* <!-- Hide on Large Screen--> */}
         <button className="d-lg-none btn btn-sm order-1 order-lg-0 me-3 me-lg-0 pt-0" href="#!" onClick={handleShowMobileNav}>
           <i><FaBars className="text-white"/></i>

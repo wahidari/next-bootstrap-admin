@@ -1,4 +1,4 @@
-import { FaTachometerAlt, FaAngleDown, FaColumns, FaBookOpen, FaChartArea, FaTable, FaAtom } from "react-icons/fa"
+import { FaTachometerAlt, FaAngleDown, FaColumns, FaBookOpen, FaChartArea, FaTable, FaAtom, FaWpforms } from "react-icons/fa"
 import ActiveLink from "./ActiveLink"
 
 export default function SideNav() {
@@ -97,6 +97,12 @@ export default function SideNav() {
                 <a className="nav-link">
                   <FaAtom className="me-2" />
                   Component
+                </a>
+              </ActiveLink>
+              <ActiveLink activeClassName="active" href="/form">
+                <a className="nav-link">
+                  <FaWpforms className="me-2" />
+                  Form
                 </a>
               </ActiveLink>
             </div>
