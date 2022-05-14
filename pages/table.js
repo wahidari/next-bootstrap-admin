@@ -18,7 +18,7 @@ import { Button, Modal } from 'react-bootstrap';
 const data = [
   {
     "index": 0,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 20,
     "name": "Magdalena Parrish",
     "gender": "female",
@@ -29,7 +29,7 @@ const data = [
   },
   {
     "index": 1,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 21,
     "name": "Kathy Howard",
     "gender": "female",
@@ -40,7 +40,7 @@ const data = [
   },
   {
     "index": 2,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 33,
     "name": "Banks Jimenez",
     "gender": "male",
@@ -51,7 +51,7 @@ const data = [
   },
   {
     "index": 3,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 26,
     "name": "Harrell Pierce",
     "gender": "male",
@@ -62,7 +62,7 @@ const data = [
   },
   {
     "index": 4,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 39,
     "name": "Connie Mitchell",
     "gender": "female",
@@ -73,7 +73,7 @@ const data = [
   },
   {
     "index": 5,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 40,
     "name": "Potts Raymond",
     "gender": "male",
@@ -84,7 +84,7 @@ const data = [
   },
   {
     "index": 6,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 23,
     "name": "Cote Mathews",
     "gender": "male",
@@ -95,7 +95,7 @@ const data = [
   },
   {
     "index": 7,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 38,
     "name": "Atkins Daugherty",
     "gender": "male",
@@ -106,7 +106,7 @@ const data = [
   },
   {
     "index": 8,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 25,
     "name": "Caroline Alvarez",
     "gender": "female",
@@ -117,7 +117,7 @@ const data = [
   },
   {
     "index": 9,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 39,
     "name": "Nettie Woodward",
     "gender": "female",
@@ -128,7 +128,7 @@ const data = [
   },
   {
     "index": 10,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 23,
     "name": "Cunningham Jefferson",
     "gender": "male",
@@ -139,7 +139,7 @@ const data = [
   },
   {
     "index": 11,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 34,
     "name": "Francesca Joyce",
     "gender": "female",
@@ -150,7 +150,7 @@ const data = [
   },
   {
     "index": 12,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 32,
     "name": "May Hurst",
     "gender": "male",
@@ -161,7 +161,7 @@ const data = [
   },
   {
     "index": 13,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 38,
     "name": "Marilyn Hyde",
     "gender": "female",
@@ -172,7 +172,7 @@ const data = [
   },
   {
     "index": 14,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 30,
     "name": "Solis Robbins",
     "gender": "male",
@@ -183,7 +183,7 @@ const data = [
   },
   {
     "index": 15,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 25,
     "name": "Erma Farmer",
     "gender": "female",
@@ -194,7 +194,7 @@ const data = [
   },
   {
     "index": 16,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 28,
     "name": "Elisa Petty",
     "gender": "female",
@@ -205,7 +205,7 @@ const data = [
   },
   {
     "index": 17,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 25,
     "name": "Hazel Sharp",
     "gender": "female",
@@ -216,7 +216,7 @@ const data = [
   },
   {
     "index": 18,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 30,
     "name": "Hensley Cunningham",
     "gender": "male",
@@ -227,7 +227,7 @@ const data = [
   },
   {
     "index": 19,
-    "picture": "http://placehold.it/32x32",
+    "picture": "https://ui-avatars.com/api/?name=John+Doe",
     "age": 35,
     "name": "Mullins Mathis",
     "gender": "male",
@@ -237,6 +237,8 @@ const data = [
     "address": "246 Cove Lane, Macdona, Michigan, 3993"
   }
 ]
+
+const colors = ["0ea5e9", "ef4444", "f97316", "facc15", "84cc16", "10b981", "6366f1", "d946ef", "f43f5e"]
 
 export default function Table() {
 
@@ -259,7 +261,7 @@ export default function Table() {
   // handle delete modal closed
   const handleClose = () => setShowModal(false);
   // handle delete modal showed / closed
-  function handleShow (data) {
+  function handleShow(data) {
     setDataToDelete(data)
     setShowModal(true)
   };
@@ -287,15 +289,15 @@ export default function Table() {
         <meta property="og:title" content="Next Bootstrap" />
         <meta property="og:description" content="Next Bootstrap" />
         <meta property="og:image" content="https://next-bootstrapp.vercel.app/metalogo.png"></meta>
-        
+
       </Head>
 
       <main className="sb-nav-fixed">
-        
+
         <TopNav />
 
         <div id="layoutSidenav">
-          
+
           <SideNav />
 
           <div id="layoutSidenav_content">
@@ -338,11 +340,14 @@ export default function Table() {
                           </tr>
                         </thead>
                         <tbody>
-                          {data.map((item, index) => 
+                          {data.map((item, index) =>
                             <tr key={index + 1}>
                               <td>{index + 1}</td>
                               <td>
-                                <Image src={item.picture} alt={item.name} className="img-fluid" width="32" height="32" />
+                                <Image
+                                  src={`https://ui-avatars.com/api/?color=${colors[Math.floor(Math.random() * colors.length)]}&background=eef2ff&bold=true&rounded=true&name=${item.name}`}
+                                  alt={item.name} className="img-fluid" width="32" height="32"
+                                />
                               </td>
                               <td>{item.name}</td>
                               <td>{item.email}</td>
@@ -352,10 +357,10 @@ export default function Table() {
                               <td>
                                 <a href="#" className="me-2 text-decoration-none">
                                   Edit
-                                </a>  
+                                </a>
                                 <a href="#" className="text-danger text-decoration-none" onClick={() => handleShow(item.name)} >
                                   Hapus
-                                </a>  
+                                </a>
                               </td>
                             </tr>
                           )}
@@ -387,12 +392,12 @@ export default function Table() {
                 <Button variant="danger" onClick={() => handleSubmit()} >Delete</Button>
               </Modal.Footer>
             </Modal>
-            
+
             <Footer />
 
           </div>
         </div>
-        
+
       </main>
     </>
   )

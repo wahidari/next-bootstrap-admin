@@ -3,7 +3,7 @@ module.exports = {
   images: {
     domains: [
       'images.unsplash.com',
-      'placehold.it'
+      'ui-avatars.com'
     ],
   },
 }
