@@ -115,6 +115,12 @@ export default function MobileNav({ show, onHide, onClose }) {
                     Component
                   </a>
                 </ActiveLink>
+                <ActiveLink activeClassName="active" href="/form">
+                  <a className="nav-link">
+                    <FaAtom className="me-2" />
+                    Form
+                  </a>
+                </ActiveLink>
               </div>
             </div>
             <div className="sb-sidenav-footer">
